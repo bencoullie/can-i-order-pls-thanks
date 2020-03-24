@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "node-notifier": "^6.0.0",
     "puppeteer": "^2.1.1"
   }
 }
