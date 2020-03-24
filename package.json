@@ -10,5 +10,8 @@
   "dependencies": {
     "node-notifier": "^6.0.0",
     "puppeteer": "^2.1.1"
+  },
+  "scripts": {
+    "disappointUrself": "node disappointUrself.js"
   }
 }

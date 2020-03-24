@@ -29,7 +29,7 @@ const reloadAndRecheck = async page => {
   await getDisappointedBra(page)
 }
 
-const checkIfShitsFinallyReady = async () => {
+const checkIfShitsFinallyAvailable = async () => {
   const browser = await puppeteer.launch({ defaultViewport: { width: 2560, height: 1440 } })
   const page = await browser.newPage()
 
@@ -41,10 +41,13 @@ const checkIfShitsFinallyReady = async () => {
   }, suburbInput)
 
   await page.type(suburbInput, suburb, { delay: 100 })
+
   await wait(2)
+
   await page.keyboard.press("ArrowDown")
   await page.keyboard.press("Enter")
   await page.click(suburbSubmitButton)
+
   await wait(2)
 
   await page.goto(getDisappointedPage, { waitUntil: "networkidle0" })
@@ -54,4 +57,4 @@ const checkIfShitsFinallyReady = async () => {
   setInterval(() => reloadAndRecheck(page), intervalInMinutes)
 }
 
-checkIfShitsFinallyReady()
+checkIfShitsFinallyAvailable()
