@@ -1,0 +1,10 @@
+{
+  "name": "can-i-order-pls-thanks",
+  "version": "1.0.0",
+  "description": "I just want to get my normal groceries please, thank you so much. smh.",
+  "main": "index.js",
+  "repository": "git@github.com:bencoullie/can-i-order-pls-thanks.git",
+  "author": "Benjamin Coullie <ben.coullie@vendhq.com>",
+  "license": "MIT",
+  "private": false
+}
