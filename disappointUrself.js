@@ -11,7 +11,7 @@ const suburbInput = "input[name=PostcodeSuburb]"
 const suburbSubmitButton = "input[type=submit]"
 
 const checkIfShitsFinallyAvailable = async () => {
-  const browser = await puppeteer.launch({ headless: false, defaultViewport: { width: 2560, height: 1440 } })
+  const browser = await puppeteer.launch({ defaultViewport: { width: 2560, height: 1440 } })
   const page = await browser.newPage()
 
   await page.goto(setSuburbPage, { waitUntil: "networkidle0" })
