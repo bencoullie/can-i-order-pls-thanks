@@ -9,4 +9,4 @@ I just want to get my normal groceries please, thank you so much.
 1. clone repo
 2. `nvm use`
 3. `yarn install`
-4. `yarn disappointUrself ponsonby 10` (check countdown delivery for ponsonby area every 10 minutes). You will be notified via notification ✅. Change suburb or interval accordingly.
+4. `yarn disappointUrself ponsonby 10` (check countdown delivery for ponsonby area every 10 minutes). You will be notified of that area's delivery status. I.e. do they have a deliver slot available literally anywhere (sigh). Change suburb or interval accordingly.
