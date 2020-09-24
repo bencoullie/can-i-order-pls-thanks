@@ -4,6 +4,12 @@ I just want to get my normal groceries please, thank you so much.
 
 ![Alt Text](https://media.giphy.com/media/P1SXkeh3wxZ4Y/giphy.gif)
 
+## What does it doooo?
+Notifies you when a Countdown online grocery order time slot becomes available in your area (no more manual checking) 💅
+
+## Why?
+Covid 19 online order queues are not gucci.
+
 ## How to use
 
 1. clone repo
