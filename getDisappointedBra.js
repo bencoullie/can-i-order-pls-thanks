@@ -1,16 +1,22 @@
-const notifier = require("node-notifier")
+const notifier = require('node-notifier')
 
-module.exports.getDisappointedBra = async page => {
-  await page.screenshot({ path: "latest-screenshot.png", fullPage: true })
+module.exports.getDisappointedBra = async (page) => {
+  await page.screenshot({ path: 'latest-screenshot-final.png', fullPage: true })
 
-  const slotsAvailable = await page.evaluate(() => {
-    let openSlots = [...document.querySelectorAll(".open-delivery-window")]
+  const stillBlockedUp = await page.evaluate(() => {
+    const agggghhhhhhhh =
+      'All our delivery times are fully booked for the next few days'
 
-    return openSlots.some(slot => getComputedStyle(slot, null).display === "block")
+    return document
+      .querySelectorAll('.alert-label')[1]
+      .innerText.includes(agggghhhhhhhh)
   })
 
   notifier.notify({
-    title: "Countdown Check",
-    message: slotsAvailable ? "✅ Get in there quick! ✅" : "❌ Still no slots available! ❌"
+    title: 'Countdown Check',
+    message: !stillBlockedUp
+      ? '✅ Get in there quick! ✅'
+      : '❌ Still no slots available! ❌',
+    open: 'https://shop.countdown.co.nz/bookatimeslot',
   })
 }

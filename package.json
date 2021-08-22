@@ -12,6 +12,6 @@
     "puppeteer": "^2.1.1"
   },
   "scripts": {
-    "disappointUrself": "node disappointUrself.js"
+    "disappointYourself": "node disappointYourself.js"
   }
 }
