@@ -18,6 +18,6 @@ Please don't panic buy 🤦‍♂️
 1. clone repo
 2. `nvm use` (or otherwise set node version to 14)
 3. `yarn install`
-4. `yarn disappointUrself 'eden terrace' 10` (check countdown delivery for Eden Terrace area every 10 minutes). You will be notified of that area's delivery status. I.e. do they have a deliver slot available literally anywhere (sigh). Change suburb or interval accordingly.
+4. `yarn disappointYourself 'Eden Terrace' 10` (check countdown delivery for Eden Terrace area every 10 minutes). You will be notified of that area's delivery status. I.e. do they have a deliver slot available literally anywhere (sigh). Change suburb or interval accordingly.
 
 You can see what the headless browser is seeing by looking at `latest-screenshot-final.png` in the root dir (resets this snapshot before asserting on every loop).
